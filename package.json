@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@types/axios": "^0.9.36",
+    "axios": "^1.8.4",
+    "multer": "^2.0.2",
+    "nodemailer": "^7.0.5",
+    "react-easy-crop": "^5.5.0",
+    "react-hot-toast": "^2.5.2"
+  }
+}

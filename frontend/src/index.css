@@ -1,0 +1,117 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 0 90% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 0 100% 95%;
+    --accent-foreground: 0 90% 45%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 80% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 25%;
+    --sidebar-primary: 0 80% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 10% 95%;
+    --sidebar-accent-foreground: 0 70% 35%;
+    --sidebar-border: 0 0% 90%;
+    --sidebar-ring: 0 80% 60%;
+  }
+
+  .dark {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 0 90% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 0 50% 15%;
+    --accent-foreground: 0 90% 60%;
+
+    --destructive: 0 100% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 80% 45%;
+
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 0 80% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 10% 15%;
+    --sidebar-accent-foreground: 0 70% 90%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 0 80% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out forwards;
+}
+
+.blood-drop-bg {
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 2.5C10 2.5 3.75 8.75 3.75 12.5C3.75 14.1576 4.40848 15.7473 5.58058 16.9194C6.75268 18.0915 8.3424 18.75 10 18.75C11.6576 18.75 13.2473 18.0915 14.4194 16.9194C15.5915 15.7473 16.25 14.1576 16.25 12.5C16.25 8.75 10 2.5 10 2.5Z' fill='%23FFEDED' stroke='%23FFE0E0' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-size: 60px 60px;
+  background-position: 0 0;
+}

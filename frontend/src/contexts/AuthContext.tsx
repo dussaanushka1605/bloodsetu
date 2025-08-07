@@ -108,7 +108,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const login = async (email: string, password: string, role: UserRole) => {
     setIsLoading(true);
     try {
-      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5002';
+      const API_URL = import.meta.env.VITE_API_URL || 'https://bloodsetu.onrender.com';
       const response = await silentFetch(`${API_URL}/api/auth/login/${role}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -223,7 +223,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const register = async (userData: any, role: UserRole): Promise<User> => {
     try {
-      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5002';
+      const API_URL = import.meta.env.VITE_API_URL || 'https://bloodsetu.onrender.com';
       const response = await silentFetch(`${API_URL}/api/auth/register/${role}`, {
         method: 'POST',
         headers: {

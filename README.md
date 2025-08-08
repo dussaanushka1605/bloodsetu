@@ -1,4 +1,4 @@
-RaktSetu - Blood Donor Finder Platform
+BloodSetu - Blood Donor Finder Platform
 proejct link:-https://bloodsetu.netlify.app/
 
 Project Overview
